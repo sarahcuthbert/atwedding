@@ -26,7 +26,7 @@ export const ScheduleItem = ({icon, itemTitle, time}: TimelineItemProps) => {
             </TimelineOppositeContent>
             <TimelineSeparator>
                 <TimelineConnector sx={{bgcolor: 'secondary.main'}}/>
-                <TimelineDot color="secondary">
+                <TimelineDot color="primary">
                     {icon}
                 </TimelineDot>
                 <TimelineConnector/>
