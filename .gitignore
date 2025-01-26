@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 .env
+
+server/google_application_credentials.json
+server/node_modules
