@@ -4,23 +4,23 @@ import { createTheme } from '@mui/material/styles';
         palette: {
             mode: 'light',
             primary: {
-                main: '#a9b99f',
-                contrastText: '#114511',
+                main: '#86341e',
+                contrastText: '#d4c6a3',
             },
             secondary: {
-                main: '#d4b057',
-                contrastText: '#114511',
+                main: '#987F46 ',
+                contrastText: '#d4c6a3',
             },
             background: {
-                default: '#00FFFFFF',
-                paper: '#114511',
+                default: '#FFFFFF',
+                paper: '#d4c6a3',
             },
             text: {
-                primary: '#a9b99f',
-                secondary: '#8fa881',
+                primary: '#86341e',
+                secondary: '#b7684f',
                 disabled: '#adadad',
             },
-            divider: '#114511',
+            divider: '#d4c6a3',
         },
 
         typography: {
