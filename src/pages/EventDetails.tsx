@@ -1,5 +1,4 @@
-import {Typography} from "@mui/material";
-import {Menu} from "../components/Menu.tsx";
+import {Typography, Link} from "@mui/material";
 import {EventSection} from "../components/EventSection.tsx";
 
 export const EventDetails = () => {
@@ -7,12 +6,12 @@ export const EventDetails = () => {
         <>
             <Typography variant="h3">Event Details</Typography>
             <EventSection sectionTitle="The Venue">
-                <Typography variant="body1">
-                    XXX
-                </Typography>
-            </EventSection>
-            <EventSection sectionTitle="The Menu">
-                <Menu/>
+                <Typography variant="body1" sx={{fontWeight: "700"}}>Farbridge</Typography>
+                <Typography variant="body1">West Dean</Typography>
+                <Typography variant="body1">Chichester</Typography>
+                <Typography variant="body1">West Sussex</Typography>
+                <Typography variant="body1" mb="1rem">PO18 0JT</Typography>
+                <Link href="https://farbridge.org.uk" variant="body1" underline="hover" sx={{fontStyle: "italic"}}>Farbridge Website</Link>
             </EventSection>
             <EventSection sectionTitle="Dress Code">
                 <Typography variant="body1">
@@ -27,9 +26,9 @@ export const EventDetails = () => {
                     Y Hotel
                 </Typography>
             </EventSection>
-            <EventSection sectionTitle="Guest Photos">
+            <EventSection sectionTitle="Taxis">
                 <Typography variant="body1">
-                   A link to share photos taken by guests on the day.
+                   These taxi companies
                 </Typography>
             </EventSection>
         </>
