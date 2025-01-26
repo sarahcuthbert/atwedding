@@ -4,9 +4,9 @@ import {Link, useLocation} from "react-router-dom";
 
 const tabStyle = {
     fontSize: "1rem",
-    ":hover": {fontStyle: "normal", fontSize: "1.05rem"},
+    ":hover": {fontStyle: "normal", fontSize: "1.1rem"},
     '&.Mui-selected': {
-        fontWeight: '700',
+        fontSize: "1.05rem",
         fontStyle: "normal",
     }
 }
@@ -33,6 +33,9 @@ export const Header = () => {
                     '& .MuiTabs-indicator': {
                         display: 'none'
                     },
+                    '& .MuiTabs-flexContainer': {
+                        flexWrap: 'wrap',
+                    }
                 }}
             >
                 <Tab label="Home" value="/" component={Link} to="/" sx={tabStyle}/>
