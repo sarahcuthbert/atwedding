@@ -3,8 +3,8 @@ import {render, screen} from "@testing-library/react";
 import {Home} from "./Home.tsx";
 
 
-test('displays title', () => {
+test('displays home page headings', () => {
     render(<Home/>)
 
-    expect(screen.getByRole("heading", {name: "Home"})).toBeDefined();
+    expect(screen.getAllByRole("heading")).toHaveLength(9);
 })
