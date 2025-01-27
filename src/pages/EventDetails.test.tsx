@@ -8,8 +8,7 @@ test('displays title, icon and time passed in', () => {
 
     expect(screen.getByRole("heading", {name: "Event Details"})).toBeDefined();
     expect(screen.getByRole("heading", {name: "The Venue"})).toBeDefined();
-    expect(screen.getByRole("heading", {name: "The Menu"})).toBeDefined();
     expect(screen.getByRole("heading", {name: "Dress Code"})).toBeDefined();
     expect(screen.getByRole("heading", {name: "Places to Stay"})).toBeDefined();
-    expect(screen.getByRole("heading", {name: "Guest Photos"})).toBeDefined();
+    expect(screen.getByRole("heading", {name: "Taxis"})).toBeDefined();
 })
