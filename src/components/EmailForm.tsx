@@ -8,12 +8,17 @@ interface EmailFormProps {
 export const EmailForm = ({onSubmitEmail}: EmailFormProps): React.ReactElement => {
     const [email, setEmail] = useState<string>("");
     const [isError, setIsError] = useState<boolean>();
+    const [isValid, setIsValid] = useState<boolean>(true);
 
     const onSubmitEmailForm = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsError(false);
+        if (!email || email.length < 3 || !email.includes('@')) {
+            setIsValid(false);
+            return;
+        }
         const isSuccess = await onSubmitEmail(email);
-        if(!isSuccess) {
+        if (!isSuccess) {
             setIsError(true)
         }
     };
@@ -27,12 +32,17 @@ export const EmailForm = ({onSubmitEmail}: EmailFormProps): React.ReactElement =
                 on.</FormHelperText>
             <TextField
                 id="email-input"
-                label={"Email Address"}
+                label="Email Address"
                 placeholder="Email"
                 value={email}
-                color={"secondary"}
+                color="secondary"
                 margin="normal"
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => {
+                    setIsValid(true);
+                    setEmail(e.target.value)
+                }}
+                error={!isValid}
+                helperText={!isValid && "Please enter a valid email."}
             />
             <Button size="small" variant="contained" type="submit">Continue</Button>
             {isError && <Alert severity="error">

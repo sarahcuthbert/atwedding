@@ -31,8 +31,8 @@ Note: there are no tests for this due to google integration being the majority
 ### Deploying and other setup 
 
 #### TODO 
-- host on AWS
-- FE tests
+- FE tests for RSVP and Email Forms
+- host on AWS ??!!
 - FAQ page details
 - Update Event Details
 - Update Schedule
