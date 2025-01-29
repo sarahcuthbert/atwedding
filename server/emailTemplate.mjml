@@ -1,0 +1,112 @@
+<mjml>
+  <mj-body background-color="black">
+    <<mj-hero
+      mode="fluid-height"
+      background-width="600px"
+      background-height="469px"
+      background-url="https://lh3.googleusercontent.com/d/1FDHn0pIzyA_iGqzwsNrGwF8rgaAAUisy"
+      background-color="#2a3448"
+    >
+      <<mj-text
+        padding-top="400px"
+        padding="20px"
+        align="left"
+        font-size="56px"
+        font-family="Brush Script MT"
+        color="white"
+        >You are invited...</mj-text
+      >
+    </mj-hero>
+    <mj-section background-color="black">
+      <mj-column>
+        <mj-text
+          font-size="14px"
+          color="white"
+          align="center"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          >TO THE WEDDING OF</mj-text
+        >
+        <mj-text
+          font-size="34px"
+          color="white"
+          align="center"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          font-style="italic"
+          >Amy Cuthbert</mj-text
+        >
+        <mj-text
+          line-height="0"
+          font-size="14px"
+          color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          align="center"
+          >&</mj-text
+        >
+        <mj-text
+          font-size="34px"
+          color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          align="center"
+          font-style="italic"
+          >Tristan Hopper</mj-text
+        >
+        <mj-spacer height="30px" />
+        <mj-text
+          font-size="14px"
+          color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          align="center"
+          >SATURDAY</mj-text
+        >
+        <mj-text
+          font-size="28px"
+          color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          align="center"
+          >18 OCTOBER 2025</mj-text
+        >
+        <mj-text
+          font-size="14px"
+          color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          align="center"
+          >AT 2:00 IN THE AFTERNOON</mj-text
+        >
+        <mj-spacer height="30px" />
+
+        <mj-text
+          font-size="20px"
+          color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          align="center"
+          >FARBRIDGE, CHICHESTER
+        </mj-text>
+        <mj-text
+          font-size="20px"
+          color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          align="center"
+          >UK
+        </mj-text>
+        <mj-spacer height="30px" />
+
+        <mj-button
+          href="https://farbridge.org.uk/"
+          inner-padding="10px 30px"
+          font-size="34px"
+          color="black"
+          background-color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          >RSVP</mj-button
+        >
+        <mj-text
+          font-size="12px"
+          color="white"
+          font-family="Georgia,Helvetica,Arial,sans-serif"
+          align="center"
+          >BY 23RD AUGUST 2025
+        </mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
