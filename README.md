@@ -28,11 +28,33 @@ To run this locally:
 
 Note: there are no tests for this due to google integration being the majority
 
-### Deploying and other setup 
+### Deploying and other setup
 
-#### TODO 
-- FE tests for RSVP and Email Forms
-- host on AWS ??!!
+Build FE ready for S3  
+`pnpm build`
+
+Zip backend ready for lambda  
+`zip -r backend.zip .server`
+
+Configure aws credentials with AWS CLI  
+`aws configure`
+
+Download necessary dependencies  
+`terraform init`
+
+Check plan  
+`terraform plan`
+
+Apply changes  
+`terraform apply`
+
+#### TODO
+
+- check if terraform actually works?
+- check path to dist is correct in tf
+- get arn for acm ( `aws acm list-certificates --region us-east-1
+` )
+- upload parameters to AWS
 - FAQ page details
 - Update Event Details
 - Update Schedule
