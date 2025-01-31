@@ -30,11 +30,12 @@ Note: there are no tests for this due to google integration being the majority
 
 ### Deploying and other setup
 
-Build FE ready for S3  
-`pnpm build`
+Build FE ready for S3 without dev deps
+`pnpm build --production`
 
-Zip backend ready for lambda  
-`zip -r backend.zip .server`
+Build and zip backend ready for lambda  
+`pnpm build --production`
+`zip -r backend.zip ./server -x ".*"`
 
 Configure aws credentials with AWS CLI  
 `aws configure`
