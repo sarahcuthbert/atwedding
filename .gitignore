@@ -25,5 +25,5 @@ dist-ssr
 
 .env
 
-server/google_application_credentials.json
+google_application_credentials.json
 server/node_modules
