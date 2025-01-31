@@ -1,6 +1,6 @@
 import express, {Request, Response} from 'express';
 import dotenv from 'dotenv';
-// import serverless from 'serverless-http';
+import serverless from 'serverless-http';
 import {getInviteesByEmail} from './services/getInvitees';
 import {postResponses} from "./services/postRSVP";
 
@@ -52,4 +52,4 @@ if(process.env.IS_LOCAL) {
     });
 }
 
-// module.exports.handler = serverless(app);
+module.exports.handler = serverless(app);
