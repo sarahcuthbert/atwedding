@@ -35,7 +35,6 @@ Build FE ready for S3 without dev deps
 Push code change to S3 without infra change:
 `aws s3 sync dist/ s3://amy-tristan-wedding-frontend --delete`
 
-
 Build backend ready for lambda (terraform codes zips it up)
 `pnpm build`
 
@@ -50,6 +49,10 @@ Check plan
 
 Apply changes  
 `terraform apply`
+
+If changes aren't reflecting on distribution:  
+`aws cloudfront create-invalidation --distribution-id <DISTRIBUTION_ID> --paths "/*"`
+
 
 #### TODO
 
