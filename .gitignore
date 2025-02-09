@@ -28,8 +28,10 @@ dist-ssr
 google_application_credentials.json
 server/node_modules
 /backend.zip
+server/backend.zip
 
 # .tfstate files
 **/*.tfstate
 **/*.tfstate.*
+**/.terraform/*
 

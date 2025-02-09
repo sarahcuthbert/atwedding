@@ -31,11 +31,13 @@ Note: there are no tests for this due to google integration being the majority
 ### Deploying and other setup
 
 Build FE ready for S3 without dev deps
-`pnpm build --production`
+`pnpm build` 
+Push code change to S3 without infra change:
+`aws s3 sync dist/ s3://amy-tristan-wedding-frontend --delete`
 
-Build and zip backend ready for lambda  
-`pnpm build --production`
-`zip -r backend.zip ./server -x ".*"`
+
+Build backend ready for lambda (terraform codes zips it up)
+`pnpm build`
 
 Configure aws credentials with AWS CLI  
 `aws configure`
@@ -51,11 +53,6 @@ Apply changes
 
 #### TODO
 
-- check if terraform actually works?
-- check path to dist is correct in tf
-- get arn for acm ( `aws acm list-certificates --region us-east-1
-` )
-- upload parameters to AWS
 - FAQ page details
 - Update Event Details
 - Update Schedule

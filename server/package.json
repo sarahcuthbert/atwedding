@@ -4,7 +4,9 @@
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "dev": "ts-node server.ts"
+    "dev": "ts-node server.ts",
+    "build": "esbuild server.ts --bundle --platform=node --outfile=dist/server.js --format=cjs",
+    "postbuild": "cp -R node_modules dist/node_modules && cp package.json dist"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,7 @@
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.10.10",
+    "esbuild": "0.24.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }
