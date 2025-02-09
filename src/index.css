@@ -4,11 +4,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #d4c6a3;
-  opacity: 0.7;
-  background-image:  radial-gradient(#e0baa7 2.05px, transparent 2.05px), radial-gradient(#e0baa7 2.05px, #d4c6a3 2.05px);
-  background-size: 42px 42px;
-  background-position: 0 0,21px 21px;
+  background-color: #E8DFCA;
 }
 
 :root {
