@@ -1,9 +1,10 @@
 import {Accordion, AccordionSummary, Typography, AccordionDetails} from "@mui/material"
 import {ExpandMore} from '@mui/icons-material';
+import {ReactElement} from "react";
 
 interface QuestionAndAnswerProps {
     question: string;
-    answer: string;
+    answer: string | ReactElement;
     name: string;
 }
 
