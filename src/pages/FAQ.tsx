@@ -30,7 +30,13 @@ export const FAQ = () => {
                                answer="Please let us know of any dietary restrictions when you RSVP (there is only one option on the day)."
                                name="dietary"/>
             <QuestionAndAnswer question="Are there recommended hotels nearby?"
-                               answer="here"
+                               answer={<span>We are recommending {" "}
+                                   <Link href="https://www.goodwood.com/visit-eat-stay/the-goodwood-hotel/">The Goodwood Hotel</Link>,{" "}
+                                   <Link
+                                       href="https://www.harbourhotels.co.uk/our-hotels/sussex/harbour-hotel-chichester">The Harbour Hotel</Link> and{" "}
+                                   <Link href="https://www.travelodge.co.uk/uk/west-sussex/chichester/index.html">The Travelodge</Link>{" "}
+                                   but there is a more extensive list available on the <Link
+                                       href={"https://farbridge.org.uk/suppliers/accommodation/"}>Farbridge website</Link>.</span>}
                                name="hotels"/>
             <QuestionAndAnswer question="What time should I arrive at the ceremony/reception?"
                                answer="Guests should arrive by 1:45pm to ensure you’re seated and ready for the ceremony to begin promptly at 2pm"
@@ -39,7 +45,8 @@ export const FAQ = () => {
                                answer="Yes, there is plenty of parking available."
                                name="parking"/>
             <QuestionAndAnswer question="Where are you registered, and what types of gifts are preferred?"
-                               answer="Your presence is the greatest gift, but we appreciate this question! We will upload a link shortly. "
+                               answer={<span>Your presence is the greatest gift, but we appreciate this question! We are registered at <Link
+                                   href="https://www.weddingshop.com/Buy/View/228805">The Wedding Shop</Link> with charitable donations, gifts and a honeymoon fund. </span>}
                                name="registry"/>
         </Box>
     </>

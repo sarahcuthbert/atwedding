@@ -15,10 +15,10 @@ export const Schedule = () => {
             <Timeline position="alternate">
                 <ScheduleItem itemTitle="Ceremony" time="2:00 pm" icon={<FavoriteBorderIcon/>}/>
                 <ScheduleItem itemTitle="Drinks and Canapes" time="2:30 pm" icon={<LocalBarIcon/>}/>
-                <ScheduleItem itemTitle="Wedding Breakfast" time="4:00 pm" icon={<RestaurantIcon/>}/>
-                <ScheduleItem itemTitle="Dancing" time="7:00 pm" icon={<MusicNoteIcon/>}/>
+                <ScheduleItem itemTitle="Wedding Breakfast" time="4:30 pm" icon={<RestaurantIcon/>}/>
+                <ScheduleItem itemTitle="Dancing" time="7:30 pm" icon={<MusicNoteIcon/>}/>
                 <ScheduleItem itemTitle="Late Night Snack" time="9:00 pm" icon={<TapasIcon/>}/>
-                <ScheduleItem itemTitle="Home Time" time="12:00 am" icon={<BedtimeIcon/>}/>
+                <ScheduleItem itemTitle="Home Time" time="11:30 pm" icon={<BedtimeIcon/>}/>
             </Timeline>
         </>
     )
