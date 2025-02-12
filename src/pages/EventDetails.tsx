@@ -1,4 +1,4 @@
-import {Typography, Link} from "@mui/material";
+import {Typography, Link, Divider} from "@mui/material";
 import {EventSection} from "../components/EventSection.tsx";
 
 export const EventDetails = () => {
@@ -6,11 +6,14 @@ export const EventDetails = () => {
         <>
             <Typography variant="h3">Event Details</Typography>
             <EventSection sectionTitle="The Venue">
-                <Typography variant="body1" sx={{fontWeight: "700"}}>Farbridge</Typography>
+                <Typography variant="h6" sx={{fontStyle: "normal"}}>Farbridge</Typography>
                 <Typography variant="body1">West Dean</Typography>
                 <Typography variant="body1">Chichester</Typography>
                 <Typography variant="body1">West Sussex</Typography>
-                <Typography variant="body1" mb="1rem">PO18 0JT</Typography>
+                <Typography variant="body1" mb="0.5rem">PO18 0JT</Typography>
+                <Link href="https://maps.app.goo.gl/ZbVbgBanzE8iCrJF8" variant="body2" underline="hover"
+                      sx={{fontStyle: "italic"}}>Google Maps</Link>
+                <Divider sx={{borderColor: 'background.default', marginY: '0.5rem'}}/>
                 <Link href="https://farbridge.org.uk" variant="body1" underline="hover" sx={{fontStyle: "italic"}}>Farbridge
                     Website</Link>
             </EventSection>
@@ -30,9 +33,11 @@ export const EventDetails = () => {
                 <Typography variant="body1" mb="1rem">
                     <Link href="https://www.travelodge.co.uk/uk/west-sussex/chichester/index.html">The Travelodge</Link>
                 </Typography>
-                <Typography variant="body2"> There is a more extensive list available on the {" "}
+                <Typography variant="body2" mb="1rem"> There is a more extensive list available on the {" "}
                     <Link href={"https://farbridge.org.uk/suppliers/accommodation/"}>Farbridge website</Link>.
                 </Typography>
+                <Typography variant="body2" >On-site accommodation at Farbridge is reserved for the bridal party but there
+                    are plenty of great hotels and rentals nearby.</Typography>
             </EventSection>
             <EventSection sectionTitle="Taxis">
                 <Typography variant="body1">
