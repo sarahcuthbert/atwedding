@@ -5,22 +5,22 @@ import { createTheme } from '@mui/material/styles';
             mode: 'light',
             primary: {
                 main: '#1A4D2E',
-                contrastText: '#F5EFE6',
+                contrastText: '#E8DFCA',
             },
             secondary: {
                 main: '#CD5C08 ',
-                contrastText: '#F5EFE6',
+                contrastText: '#E8DFCA',
             },
             background: {
-                default: '#E8DFCA',
-                paper: '#E8DFCA',
+                default: '#F5EFE6',
+                paper: '#F5EFE6',
             },
             text: {
                 primary: '#1A4D2E',
                 secondary: '#4F6F52',
                 disabled: '#adadad',
             },
-            divider: '#F5EFE6',
+            divider: '#E8DFCA',
         },
 
         typography: {
