@@ -17,7 +17,7 @@ export const Header = () => {
     const [tabValue, setTabValue] = useState(pathname || "/");
 
     return (
-        <Stack sx={{marginBottom: "1rem"}}>
+        <Stack sx={{mb: "1rem", mt: "2rem"}}>
             <Typography variant="h1">
                 Amy & Tristan
             </Typography>
