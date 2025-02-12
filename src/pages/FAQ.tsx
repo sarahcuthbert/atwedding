@@ -45,8 +45,8 @@ export const FAQ = () => {
                                answer="Yes, there is plenty of parking available."
                                name="parking"/>
             <QuestionAndAnswer question="Where are you registered, and what types of gifts are preferred?"
-                               answer={<span>Your presence is the greatest gift, but we appreciate this question! We are registered at <Link
-                                   href="https://www.weddingshop.com/Buy/View/228805">The Wedding Shop</Link> with charitable donations, gifts and a honeymoon fund. </span>}
+                               answer={<span>Your presence is the greatest gift, but we appreciate this question!
+                                   We are currently working on this and will update here when we have a solution. </span>}
                                name="registry"/>
         </Box>
     </>
