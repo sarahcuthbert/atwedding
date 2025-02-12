@@ -53,9 +53,3 @@ Apply changes
 If changes aren't reflecting on distribution:  
 `aws cloudfront create-invalidation --distribution-id <DISTRIBUTION_ID> --paths "/*"`
 
-
-#### TODO
-
-- FAQ page details
-- Update Event Details
-- Update Schedule
