@@ -6,7 +6,7 @@ type EventSectionProps = {
 }
 export const EventSection = ({sectionTitle, children}: EventSectionProps) => {
     return (
-        <Container maxWidth="sm" sx={{marginY: '0.8rem'}}>
+        <Container maxWidth="sm" sx={{marginTop: '1rem'}}>
             <Divider variant="middle" sx={{marginX: 'auto', marginY: '2rem', width: '30%', borderColor:'primary.main'}}/>
             <Typography variant="h4" mb="1rem">{sectionTitle}</Typography>
             {children}

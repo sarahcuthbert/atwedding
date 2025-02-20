@@ -49,6 +49,7 @@ export const EventDetails = () => {
                 <Typography variant="body2"> There are a few more companies available on the {" "}
                     <Link href={"https://farbridge.org.uk/suppliers/transport/"}>Farbridge website</Link>.
                 </Typography>
+                <Divider variant="middle" sx={{marginX: 'auto', marginTop: '2rem', width: '30%', borderColor:'primary.main'}}/>
             </EventSection>
         </>
     )

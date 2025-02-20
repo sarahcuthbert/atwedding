@@ -74,7 +74,7 @@ export const RSVPForm = ({invitees, onSubmitRSVP}: RSVPFormProps) => {
     }
 
     return (
-        <Box component="form" bgcolor="background.paper" maxWidth={500} m={"auto"} p="1rem" alignItems="center"
+        <Box component="form" bgcolor="background.paper" maxWidth={500} marginX="auto" marginY="1rem" p="1rem" alignItems="center"
              display="grid"
              justifyContent="center" gap={1} onSubmit={onSubmitRSVPForm}>
             {requestState !== RequestState.SUCCESS && invitees.map((invitee, index) => (
