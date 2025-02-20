@@ -1,6 +1,6 @@
 import express, {Request, Response} from 'express';
 import dotenv from 'dotenv';
-import serverless from 'serverless-http';
+// import serverless from 'serverless-http';
 import {getInviteesByEmail} from './services/getInvitees';
 import {postResponses} from "./services/postRSVP";
 
@@ -47,9 +47,9 @@ app.post('/rsvp', (req: Request, res: Response) => {
 });
 
 if(process.env.IS_LOCAL) {
-    app.listen('5000', () => {
-        console.log(`Server is running on http://localhost:5000`);
+    app.listen('5001', () => {
+        console.log(`Server is running on http://localhost:5001`);
     });
 }
 
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);

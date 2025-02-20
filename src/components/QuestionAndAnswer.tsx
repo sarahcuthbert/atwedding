@@ -1,6 +1,11 @@
-import {Accordion, AccordionSummary, Typography, AccordionDetails} from "@mui/material"
-import {ExpandMore} from '@mui/icons-material';
-import {ReactElement} from "react";
+import {
+    Accordion,
+    AccordionSummary,
+    Typography,
+    AccordionDetails
+} from '@mui/material';
+import { ExpandMore } from '@mui/icons-material';
+import { ReactElement } from 'react';
 
 interface QuestionAndAnswerProps {
     question: string;
@@ -8,19 +13,23 @@ interface QuestionAndAnswerProps {
     name: string;
 }
 
-export const QuestionAndAnswer = ({question, answer, name}: QuestionAndAnswerProps) => {
+export const QuestionAndAnswer = ({
+    question,
+    answer,
+    name
+}: QuestionAndAnswerProps) => {
     return (
-        <Accordion >
+        <Accordion>
             <AccordionSummary
-                expandIcon={<ExpandMore color="primary"/>}
+                expandIcon={<ExpandMore color="primary" />}
                 aria-controls={`${name}-content`}
                 id={name}
             >
-                <Typography variant="h6" component="span">{question}</Typography>
+                <Typography variant="h6" component="span">
+                    {question}
+                </Typography>
             </AccordionSummary>
-            <AccordionDetails>
-                {answer}
-            </AccordionDetails>
+            <AccordionDetails>{answer}</AccordionDetails>
         </Accordion>
-    )
-}
+    );
+};

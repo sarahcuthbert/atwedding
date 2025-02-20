@@ -1,10 +1,9 @@
-import {expect, test} from 'vitest'
-import {render, screen} from "@testing-library/react";
-import {Home} from "./Home.tsx";
-
+import { expect, test } from 'vitest';
+import { render, screen } from '@testing-library/react';
+import { Home } from './Home.tsx';
 
 test('displays home page headings', () => {
-    render(<Home/>)
+    render(<Home />);
 
-    expect(screen.getAllByRole("heading")).toHaveLength(9);
-})
+    expect(screen.getAllByRole('heading')).toHaveLength(9);
+});

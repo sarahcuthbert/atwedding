@@ -1,4 +1,4 @@
-import {Typography} from "@mui/material";
+import { Typography } from '@mui/material';
 
 export const Menu = () => {
     return (
@@ -8,5 +8,5 @@ export const Menu = () => {
             <Typography variant="h6">Mains</Typography>
             <Typography variant="body1">the main</Typography>
         </>
-    )
-}
+    );
+};
