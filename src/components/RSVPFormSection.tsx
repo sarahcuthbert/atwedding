@@ -34,13 +34,16 @@ export const RSVPFormSection = ({
         <>
             {index > 0 && (
                 <Divider
-                    sx={{ borderColor: 'primary.main', marginY: '1rem' }}
+                    sx={{ borderColor: 'primary.main', marginY: '1.2rem' }}
                 />
             )}
             <Typography variant="h4" marginY="0.5rem">
                 RSVP details for {invitee.firstName + ' ' + invitee.lastName}
             </Typography>
-            <FormLabel id="attending-label" sx={{ fontSize: '1.1rem' }}>
+            <FormLabel
+                id="attending-label"
+                sx={{ fontSize: '1.1rem', marginTop: '1.2rem' }}
+            >
                 Attending?
             </FormLabel>
             <RadioGroup
@@ -55,7 +58,10 @@ export const RSVPFormSection = ({
                 <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
                 <FormControlLabel value="No" control={<Radio />} label="No" />
             </RadioGroup>
-            <FormLabel id="dietary-label" sx={{ fontSize: '1.1rem' }}>
+            <FormLabel
+                id="dietary-label"
+                sx={{ fontSize: '1.1rem', marginTop: '1.2rem' }}
+            >
                 Any Dietary Requirements?
             </FormLabel>
             <TextField
@@ -65,10 +71,13 @@ export const RSVPFormSection = ({
                 placeholder="e.g. Nut free, Vegetarian"
                 value={dietary}
                 color={'secondary'}
-                margin="normal"
+                margin="dense"
                 onChange={(e) => setDietary(e.target.value, index)}
             />
-            <FormLabel id="dietary-label" sx={{ fontSize: '1.1rem' }}>
+            <FormLabel
+                id="dietary-label"
+                sx={{ fontSize: '1.1rem', marginTop: '1rem' }}
+            >
                 Anything else we should be aware of?
             </FormLabel>
             <TextField
@@ -77,7 +86,7 @@ export const RSVPFormSection = ({
                 label={'Other'}
                 value={other}
                 color={'secondary'}
-                margin="normal"
+                margin="dense"
                 onChange={(e) => setOther(e.target.value, index)}
             />
         </>
