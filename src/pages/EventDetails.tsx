@@ -23,6 +23,8 @@ export const EventDetails = () => {
                 </Typography>
             </EventSection>
             <EventSection sectionTitle="Places to Stay">
+                <Typography variant="body2" mb="1rem">On-site accommodation at Farbridge is reserved for the bridal party but there
+                    are plenty of great hotels and rentals nearby.</Typography>
                 <Typography variant="body1" mb="1rem">
                     <Link href="https://www.goodwood.com/visit-eat-stay/the-goodwood-hotel/">The Goodwood Hotel</Link>
                 </Typography>
@@ -33,11 +35,9 @@ export const EventDetails = () => {
                 <Typography variant="body1" mb="1rem">
                     <Link href="https://www.travelodge.co.uk/uk/west-sussex/chichester/index.html">The Travelodge</Link>
                 </Typography>
-                <Typography variant="body2" mb="1rem"> There is a more extensive list available on the {" "}
+                <Typography variant="body2"> There is a more extensive list available on the {" "}
                     <Link href={"https://farbridge.org.uk/suppliers/accommodation/"}>Farbridge website</Link>.
                 </Typography>
-                <Typography variant="body2" >On-site accommodation at Farbridge is reserved for the bridal party but there
-                    are plenty of great hotels and rentals nearby.</Typography>
             </EventSection>
             <EventSection sectionTitle="Taxis">
                 <Typography variant="body1">
