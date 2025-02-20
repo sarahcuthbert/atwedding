@@ -1,19 +1,13 @@
-import {Alert, Box, Button, LinearProgress} from "@mui/material";
 import {Invitee} from "../model/Invitee.ts";
 import {RSVPResponse} from "../model/RSVPResponse.ts";
 import {useState} from "react";
 import {RSVPFormSection} from "./RSVPFormSection.tsx";
+import {GenericForm} from "./GenericForm.tsx";
+import { RequestState } from "../model/RequestState.ts";
 
 interface RSVPFormProps {
     invitees: Invitee[];
     onSubmitRSVP: (responses: RSVPResponse[]) => Promise<boolean>,
-}
-
-enum RequestState {
-    NOT_SENT,
-    SENDING,
-    SUCCESS,
-    ERROR
 }
 
 export const RSVPForm = ({invitees, onSubmitRSVP}: RSVPFormProps) => {
@@ -74,22 +68,17 @@ export const RSVPForm = ({invitees, onSubmitRSVP}: RSVPFormProps) => {
     }
 
     return (
-        <Box component="form" bgcolor="background.paper" maxWidth={500} marginX="auto" marginY="1rem" p="1rem" alignItems="center"
-             display="grid"
-             justifyContent="center" gap={1} onSubmit={onSubmitRSVPForm}>
-            {requestState !== RequestState.SUCCESS && invitees.map((invitee, index) => (
-                <RSVPFormSection invitee={invitee} key={index} index={index}
-                                 attending={attendings[index]} setAttending={setAttending}
-                                 dietary={dietarys[index]} setDietary={setDietary}
-                                 other={others[index]} setOther={setOther}/>
-            ))}
-            {requestState !== RequestState.SUCCESS &&
-                <Button size="small" variant="contained" type="submit" sx={{marginY: "1rem"}}
-                        disabled={requestState === RequestState.SENDING}>Submit</Button>}
-            {requestState === RequestState.SENDING && <LinearProgress/>}
-            {requestState === RequestState.SUCCESS && <Alert severity="success">RSVP successfully recorded!</Alert>}
-            {requestState === RequestState.ERROR &&
-                <Alert severity="error">Error submitting RSVP. Please try again!</Alert>}
-        </Box>
+        <GenericForm onSubmitForm={onSubmitRSVPForm}
+                     requestState={requestState}
+                     mainFormBody={<>
+                         {requestState !== RequestState.SUCCESS && invitees.map((invitee, index) => (
+                             <RSVPFormSection invitee={invitee} key={index} index={index}
+                                              attending={attendings[index]} setAttending={setAttending}
+                                              dietary={dietarys[index]} setDietary={setDietary}
+                                              other={others[index]} setOther={setOther}/>
+                         ))}</>}
+                     buttonText={"Submit"}
+                     errorAlertText="Error submitting RSVP. Please try again!"
+                     successAlertText="RSVP successfully recorded!"/>
     )
 }
