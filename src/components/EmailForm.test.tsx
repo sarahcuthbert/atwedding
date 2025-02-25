@@ -28,6 +28,18 @@ describe('EmailForm', () => {
         expect(mockSubmitEmail).toHaveBeenCalledWith(mockEmail);
     });
 
+    test('should convert email on submit email with capital valid email address', async () => {
+        const mockSubmitEmail = vi.fn();
+        const mockEmail = 'TEST@email.com';
+        render(<EmailForm onSubmitEmail={mockSubmitEmail} />);
+
+        await userEvent.type(screen.getByPlaceholderText('Email'), mockEmail);
+        expect(screen.getByRole('textbox')).toHaveProperty('value', mockEmail);
+
+        await userEvent.click(screen.getByRole('button'));
+        expect(mockSubmitEmail).toHaveBeenCalledWith('test@email.com');
+    });
+
     test('should not call on submit email when no email address submitted and show validation', async () => {
         const mockSubmitEmail = vi.fn();
         render(<EmailForm onSubmitEmail={mockSubmitEmail} />);

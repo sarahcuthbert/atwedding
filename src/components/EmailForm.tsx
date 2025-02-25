@@ -24,7 +24,8 @@ export const EmailForm = ({
             setRequestState(RequestState.NOT_SENT);
             return;
         }
-        const isSuccess = await onSubmitEmail(email);
+        const convertedEmail = email.toLowerCase();
+        const isSuccess = await onSubmitEmail(convertedEmail);
         if (isSuccess) {
             setRequestState(RequestState.SUCCESS);
         } else {
