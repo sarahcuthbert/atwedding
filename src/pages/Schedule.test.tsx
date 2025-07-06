@@ -8,5 +8,5 @@ test('displays title, icon and time passed in', () => {
     expect(
         screen.getByRole('heading', { name: 'Schedule of Events' })
     ).toBeDefined();
-    expect(screen.getAllByRole('listitem')).toHaveLength(6);
+    expect(screen.getAllByRole('listitem')).toHaveLength(7);
 });

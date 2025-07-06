@@ -1,5 +1,6 @@
 import { Typography } from '@mui/material';
 import { Timeline } from '@mui/lab';
+import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 import MusicNoteIcon from '@mui/icons-material/MusicNote';
 import LocalBarIcon from '@mui/icons-material/LocalBar';
@@ -12,7 +13,12 @@ export const Schedule = () => {
     return (
         <>
             <Typography variant="h3">Schedule of Events</Typography>
-            <Timeline position="alternate">
+            <Timeline position="alternate-reverse">
+                <ScheduleItem
+                    itemTitle="Arrival From"
+                    time="1:30 pm"
+                    icon={<DirectionsCarIcon />}
+                />
                 <ScheduleItem
                     itemTitle="Ceremony"
                     time="2:00 pm"
