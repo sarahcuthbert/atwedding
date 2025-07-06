@@ -1,5 +1,5 @@
-import { Typography, Box, Link } from '@mui/material';
-import { QuestionAndAnswer } from '../components/QuestionAndAnswer.tsx';
+import {Typography, Box, Link} from '@mui/material';
+import {QuestionAndAnswer} from '../components/QuestionAndAnswer.tsx';
 
 export const FAQ = () => {
     return (
@@ -21,6 +21,29 @@ export const FAQ = () => {
                     question="Where is the ceremony and reception being held?"
                     answer="The ceremony will be held at Farbridge, Chicester and the reception will follow at the same location."
                     name="location"
+                />
+                <QuestionAndAnswer
+                    question="Do you have a gift registry, and what types of gifts are preferred?"
+                    answer={
+                        <p>
+                            <p>
+                                We’re lucky to have most things we need at home, so instead of traditional gifts, we’d
+                                love
+                                your help making our honeymoon to Fiji (with a Sydney stopover!) extra special. If you’d
+                                like to contribute, we’ve set up a small honeymoon <Link
+                                href="https://www.hitchd.com/amyandtristanswedding">fund</Link>.
+                            </p>
+                            <p>
+                                If you'd prefer to give something physical, John Lewis or White Company vouchers would
+                                be perfect for future plans like a new home or starting a family.
+                            </p>
+                            <p>
+                                Of course, you’re welcome to gift however you like—cash, something personal, or just
+                                your presence. We’re grateful either way!
+                            </p>
+                        </p>
+                    }
+                    name="registry"
                 />
                 <QuestionAndAnswer
                     question="Can I take photos at the wedding?"
@@ -96,18 +119,6 @@ export const FAQ = () => {
                     question="Will there be parking available at the venue?"
                     answer="Yes, there is plenty of parking available."
                     name="parking"
-                />
-                <QuestionAndAnswer
-                    question="Where are you registered, and what types of gifts are preferred?"
-                    answer={
-                        <span>
-                            Your presence is the greatest gift, but we
-                            appreciate this question! We are currently working
-                            on this and will update here when we have a
-                            solution.{' '}
-                        </span>
-                    }
-                    name="registry"
                 />
             </Box>
         </>
