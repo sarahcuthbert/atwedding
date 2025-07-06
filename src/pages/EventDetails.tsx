@@ -39,8 +39,11 @@ export const EventDetails = () => {
                 </Link>
             </EventSection>
             <EventSection sectionTitle="Dress Code">
-                <Typography variant="body1">
+                <Typography variant="body1" mb="1rem">
                     Our dress code is cocktail attire.
+                </Typography>
+                <Typography variant="body2">
+                    For men, this means suits or smart jackets with trousers – ties are optional. For women, dresses, jumpsuits, or similar options work well; floor-length gowns aren’t necessary. You’re welcome to choose any colour or pattern that suits your style.
                 </Typography>
             </EventSection>
             <EventSection sectionTitle="Places to Stay">
